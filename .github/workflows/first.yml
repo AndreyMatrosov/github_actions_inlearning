@@ -39,6 +39,7 @@ jobs:
     job4:
         name: Fourth job
         runs-on: ubuntu-18.04
+        needs: [job1, job2, job3]
         steps:
           - name: Step one
             uses: actions/checkout@v2
