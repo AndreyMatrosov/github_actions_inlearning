@@ -15,7 +15,7 @@ jobs:
             - name: Step two
               run: | 
                   date
-                  osversion 
+                  lsb_release -a 
     job2:
         name: Second Job
         runs-on: windows-latest
@@ -35,7 +35,7 @@ jobs:
           - name: Step two
             run: |
                 date
-                osversion
+                sw_vers
     job4:
         name: Fourth job
         runs-on: ubuntu-18.04
@@ -45,4 +45,4 @@ jobs:
           - name: Step two
             run: |
                 date
-                osversion
+                lsb_release -a
