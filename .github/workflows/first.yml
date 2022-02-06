@@ -3,7 +3,7 @@ name: first
 on: 
   push:
     branches:
-      - "integration"
+      - "ch02_02"
 
 jobs:
     job1:
